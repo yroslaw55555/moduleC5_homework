@@ -93,9 +93,9 @@ btnDec.addEventListener('click', async () => {
 
 
   if (myJSON) {
-    const jaja = localStorage.getItem("myJSON");
+    const StrorJSON = localStorage.getItem("myJSON");
     //console.log(jaja)
-    for (let picture of JSON.parse(jaja)) {
+    for (let picture of JSON.parse(StrorJSON)) {
         //console.log(picture);
         MyMass(`<img src="${picture.download_url}"/>`);
      }
